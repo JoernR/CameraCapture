@@ -33,9 +33,14 @@
 #include <mutex>
 #include "opencv2/opencv.hpp"
 
-/// Simple wrapper around OpenCV's VideoCapture class for reading the Raspberry Pi camera
-/// Retrieves images from the camera in a separate thread
-/// Allows to get the newest camera image even if the read() method is not called at camera frame rate
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+/// Simple wrapper around OpenCV's VideoCapture class for reading the Raspberry Pi camera               //
+/// Retrieves images from the camera in a separate thread                                               //
+/// Allows to get the newest camera image even if the read() method is not called at camera frame rate  //
+///                                                                                                     //
+/// https://github.com/JoernR/CameraCapture                                                             //
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 class CameraCapture {
 public:
 	/// Constructor
